@@ -15,6 +15,7 @@ model:backward(input,do_dw) -- 이를 수행했을 경우, dl_dw가 자동으로
    3. source ~/.bashrc
 
 -- torch debug IDE RUN
+
 0. open terminal
 1. sudo su
 2. cd zbs-torch
