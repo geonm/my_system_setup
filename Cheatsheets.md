@@ -21,3 +21,6 @@ model:backward(input,do_dw) -- 이를 수행했을 경우, dl_dw가 자동으로
 2. cd zbs-torch
 3. ./zbstudio.sh
 
+To see gpu_meter in UBUNTU 16.04
+0. open terminal
+1. watch nvidia-smi
