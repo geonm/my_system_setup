@@ -31,3 +31,8 @@ model:backward(input,do_dw) -- 이를 수행했을 경우, dl_dw가 자동으로
 0. open terminal
 1. watch watch -n 1 free -m
 
+--To install cudnn in UBUNTU 16.04
+open terminal at Download folder
+$ sudo cp cuda/include/*.h /usr/local/cuda/include
+
+$ sudo cp cuda/lib64/*.so* /usr/local/cuda/lib64
