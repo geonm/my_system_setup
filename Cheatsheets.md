@@ -10,7 +10,9 @@ model:backward(input,do_dw) -- 이를 수행했을 경우, dl_dw가 자동으로
 3. add torch7 env like this,
    1. sudo vim ~/.bashrc
    2.  export CUDA_HOME=/usr/local/cuda-8.0
+   
        export LD_LIBRARY_PATH=${CUDA_HOME}/lib64
+       
        export TORCH_BIN=/root/torch
    3. source ~/.bashrc
 
@@ -38,3 +40,16 @@ open terminal at Download folder
 $ sudo cp cuda/include/*.h /usr/local/cuda/include
 
 $ sudo cp cuda/lib64/*.so* /usr/local/cuda/lib64
+
+--To install anaconda
+
+wget https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda-2.3.0-Linux-x86_64.sh
+
+bash Anaconda-2.3.0-Linux-x86_64.sh
+
+conda create --name tf_env --clone root
+
+--To install Keras
+
+https://github.com/fchollet/keras
+
