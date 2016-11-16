@@ -39,7 +39,7 @@ open terminal at Download folder
 
 $ sudo cp cuda/include/*.h /usr/local/cuda/include
 
-$ sudo cp cuda/lib64/*.so* /usr/local/cuda/lib64
+$ sudo cp cuda/lib64/* /usr/local/cuda/lib64
 
 --To install anaconda
 
