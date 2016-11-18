@@ -61,5 +61,5 @@ https://github.com/fchollet/keras
 2. pip install -U nltk
 
 3. start python
-   >> import nltk
-   >> nltk.download()
+   import nltk
+   nltk.download()
