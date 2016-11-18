@@ -53,3 +53,13 @@ conda create --name tf_env --clone root
 
 https://github.com/fchollet/keras
 
+
+--To install NLTK based on Python
+
+1. activate your conda enviroment variable.
+
+2. pip install -U nltk
+
+3. start python
+   >> import nltk
+   >> nltk.download()
