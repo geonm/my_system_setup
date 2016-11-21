@@ -63,3 +63,7 @@ https://github.com/fchollet/keras
 3. start python
    import nltk
    nltk.download()
+
+-- To erase cache memory in ubuntu
+
+$ echo 3 | sudo tee /proc/sys/vm/drop_caches
