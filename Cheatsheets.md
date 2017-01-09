@@ -67,3 +67,11 @@ https://github.com/fchollet/keras
 -- To erase cache memory in ubuntu
 
 $ echo 3 | sudo tee /proc/sys/vm/drop_caches
+
+-- To install opencv based on Python at UBUNTU 16.04
+
+1. First, follow this instruction : https://gist.github.com/arthurbeggs/06df46af94af7f261513934e56103b30
+
+2. Add env, $ export PYTHONPATH=/usr/local/python/2.7:$PYTHONPATH
+
+3. If you are using conda env_var, copy cv2.so from /usr/local/python/2.7 to /home/yourname/anaconda2/envs/tf_env/lib/python2.7/site-packages
