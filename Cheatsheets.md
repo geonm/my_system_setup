@@ -76,3 +76,13 @@ $ echo 3 | sudo tee /proc/sys/vm/drop_caches
 
 3. If you are using conda env_var, copy cv2.so from "/usr/local/python/2.7" to 
    "/home/yourname/anaconda2/envs/tf_env/lib/python2.7/site-packages"
+
+-- To install DLIB
+
+1. sudo apt-get install cmake
+
+2. sudo apt-get install libboost-all-dev
+
+3. sudo apt-get install python-setuptools
+
+4. sudo python setup.py install 
