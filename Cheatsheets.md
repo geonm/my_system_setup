@@ -83,6 +83,8 @@ $ echo 3 | sudo tee /proc/sys/vm/drop_caches
 
 2. sudo apt-get install libboost-all-dev
 
+3. Download dlib from http://dlib.net/
+
 3. sudo apt-get install python-setuptools
 
 4. sudo python setup.py install 
