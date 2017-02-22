@@ -88,3 +88,80 @@ $ echo 3 | sudo tee /proc/sys/vm/drop_caches
 3. sudo apt-get install python-setuptools
 
 4. sudo python setup.py install 
+
+
+-----------------------------------------------------------------
+
+-- Install Tensorflow from source :)
+
+0. I will assume you already installed cuda 8.0, cudnn 5.
+
+1. You should install Bazel first
+   - sudo add-apt-repository ppa:webupd8team/java
+   - sudo apt-get update
+   - sudo apt-get install oracle-java8-installer
+   - echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
+   - curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
+   - sudo apt-get update && sudo apt-get install bazel
+   - sudo apt-get upgrade bazel
+   - If you want to know whether bazel correctly installed w/o errors, type bazel-version on your terminal
+
+2. turn on your anaconda env
+
+3. sudo apt-get install python-numpy swig python-dev
+
+4. sudo apt-get install git
+
+5. git clone --recurse-submodules https://github.com/tensorflow/tensorflow
+
+6. cd ~/tensorflow
+
+7. ./configure
+
+8. follow like this
+
+$ cd tensorflow  # cd to the top-level directory created
+$ ./configure
+Please specify the location of python. [Default is /usr/bin/python]: /usr/bin/python2.7
+Please specify optimization flags to use during compilation when bazel option "--config=opt" is specified [Default is -march=native]:
+Do you wish to use jemalloc as the malloc implementation? [Y/n]
+jemalloc enabled
+Do you wish to build TensorFlow with Google Cloud Platform support? [y/N]
+No Google Cloud Platform support will be enabled for TensorFlow
+Do you wish to build TensorFlow with Hadoop File System support? [y/N]
+No Hadoop File System support will be enabled for TensorFlow
+Do you wish to build TensorFlow with the XLA just-in-time compiler (experimental)? [y/N]
+No XLA JIT support will be enabled for TensorFlow
+Found possible Python library paths:
+  /usr/local/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages
+Please input the desired Python library path to use.  Default is [/usr/local/lib/python2.7/dist-packages]
+Using python library path: /usr/local/lib/python2.7/dist-packages
+Do you wish to build TensorFlow with OpenCL support? [y/N] N
+No OpenCL support will be enabled for TensorFlow
+Do you wish to build TensorFlow with CUDA support? [y/N] Y
+CUDA support will be enabled for TensorFlow
+Please specify which gcc should be used by nvcc as the host compiler. [Default is /usr/bin/gcc]:
+Please specify the Cuda SDK version you want to use, e.g. 7.0. [Leave empty to use system default]: 8.0
+Please specify the location where CUDA 8.0 toolkit is installed. Refer to README.md for more details. [Default is /usr/local/cuda]:
+Please specify the cuDNN version you want to use. [Leave empty to use system default]: 5
+Please specify the location where cuDNN 5 library is installed. Refer to README.md for more details. [Default is /usr/local/cuda]:
+Please specify a list of comma-separated Cuda compute capabilities you want to build with.
+You can find the compute capability of your device at: https://developer.nvidia.com/cuda-gpus.
+Please note that each additional compute capability significantly increases your build time and binary size.
+[Default is: "3.5,5.2"]: 3.5
+Setting up Cuda include
+Setting up Cuda lib
+Setting up Cuda bin
+Setting up Cuda nvvm
+Setting up CUPTI include
+Setting up CUPTI lib64
+Configuration finished
+
+9. bazel build -c opt --copt=-mavx --copt=-mavx2 --copt=-mfma --copt=-mfpmath=both --copt=-msse4.2 --config=cuda -k //tensorflow/tools/pip_package:build_pip_package
+
+10. bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
+
+11. pip install /tmp/tensorflow_pkg/tensorflow-1.0.0-cp27-cp27mu-linux_x86_64.whl
+
+12. Done!
