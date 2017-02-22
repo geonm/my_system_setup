@@ -118,7 +118,7 @@ $ echo 3 | sudo tee /proc/sys/vm/drop_caches
 
 7. ./configure
 
-8. follow like this
+8. follow like this 
 
 $ cd tensorflow  # cd to the top-level directory created
 $ ./configure
