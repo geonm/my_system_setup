@@ -131,3 +131,15 @@ https://www.tensorflow.org/install/install_sources
 11. pip install /tmp/tensorflow_pkg/tensorflow-1.0.0-cp27-cp27mu-linux_x86_64.whl
 
 12. Done!
+
+----------------------------------------------------
+
+-- To install system monitor widget
+
+1. sudo add-apt-repository ppa:fossfreedom/indicator-sysmonitor
+
+2. sudo apt-get update
+
+3. sudo apt-get install indicator-sysmonitor
+
+4. open system monitor indicator
