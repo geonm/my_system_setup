@@ -88,6 +88,9 @@ $ echo 3 | sudo tee /proc/sys/vm/drop_caches
 -----------------------------------------------------------------
 -- To install DLIB
 
+0. SUPER EASY WAY : conda install -c menpo dlib=18.18 (https://anaconda.org/menpo/dlib)
+   If it works well, you don't have to follow following instructions
+
 1. sudo apt-get install cmake
 
 2. sudo apt-get install libboost-all-dev
@@ -97,8 +100,6 @@ $ echo 3 | sudo tee /proc/sys/vm/drop_caches
 3. sudo apt-get install python-setuptools
 
 4. sudo python setup.py install 
-
-
 -----------------------------------------------------------------
 
 -- Install Tensorflow from source :)
