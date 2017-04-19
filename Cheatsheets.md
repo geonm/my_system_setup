@@ -157,3 +157,29 @@ https://www.tensorflow.org/install/install_sources
 3. sudo apt-get install indicator-sysmonitor
 
 4. open system monitor indicator
+
+---------------------------------------------------
+
+-- How to freeze the trained network in Tensorflow
+
+0. you need .ckpt file and .pb file.
+
+1. .ckpt file and .pb file contain weight parameters and graph structure, respectively.
+
+2. move to your tensorflow source folder (installed location) e.g, /home/user_ID/tensorflow
+
+3. open terminal and type $ bazel build tensorflow/python/tools:freeze_graph
+
+4. after that, type 
+
+bazel-bin/tensorflow/python/tools/freeze_graph \
+--input_graph=/your/path/Graph.pb \
+--input_checkpoint=/your/path/Weight.ckpt \
+--output_graph=/your/path/output_pb/frozen_graph.pb \
+--output_node_names=name_of_output
+
+5. ** name_of_output ** is the scope name of your prediction layer. When you print out your prediction layer, it produces like this, if you type 'net/logits' as the scope name; 
+Out[2]: <tf.Tensor 'net/logits:0' shape=(?, 7) dtype=float32>
+
+6. If so, name_of_output should be net/logits (not :0 attatched)
+
