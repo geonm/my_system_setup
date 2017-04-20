@@ -78,6 +78,8 @@ $ echo 3 | sudo tee /proc/sys/vm/drop_caches
 -----------------------------------------------------------------
 -- To install opencv based on Python at UBUNTU 16.04
 
+0. *** easiest way to install opencv2. Turn on your env_id and type $ conda install -c menpo opencv=2.4.11
+
 1. First, follow this instruction : https://gist.github.com/arthurbeggs/06df46af94af7f261513934e56103b30
 
 2. Add env, $ export PYTHONPATH=/usr/local/python/2.7:$PYTHONPATH
