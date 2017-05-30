@@ -188,7 +188,7 @@ Out[2]: <tf.Tensor 'net/logits:0' shape=(?, 7) dtype=float32>
 ------
 %%% If nvidia additional driver is absent, type these instructions
 
-1. sudo add-apt-repository ppa:xorg-edgers/ppa
+1. sudo add-apt-repository ppa:graphics-drivers/ppa
 2. sudo apt-get update
 
 %%% then back to additional driver tap, you can find nvidia additional driver for ubuntu 16.04
