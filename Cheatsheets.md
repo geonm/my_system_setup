@@ -17,6 +17,17 @@ model:backward(input,do_dw) -- 이를 수행했을 경우, dl_dw가 자동으로
    3. source ~/.bashrc
 
 -----------------------------------------------------------------
+-- server setting
+
+1. Install anaconda
+2. vim ~/.bashrc
+3. add this line
+   export LD_LIBRARY_PATH=/usr/local/cuda/lib64/
+4. source ~/.bashrc
+5. Good luck :)
+
+
+-----------------------------------------------------------------
 -- torch debug IDE RUN
 
 0. open terminal
