@@ -1,3 +1,5 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 python your_code_name.py
+
 w, dl_dw = model:getParameters() --w는 weights, dl_dw는 gradient parameter가 된다.
 
 ~ward(input, output)
