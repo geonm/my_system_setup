@@ -51,7 +51,7 @@ model:backward(input,do_dw) -- 이를 수행했을 경우, dl_dw가 자동으로
 -----------------------------------------------------------------
 --To install cudnn in UBUNTU 16.04
 
-open terminal at Download folder
+open terminal at Download folder @ https://developer.nvidia.com/rdp/cudnn-download
 
 $ sudo cp cuda/include/*.h /usr/local/cuda/include
 
