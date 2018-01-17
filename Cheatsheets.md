@@ -1,9 +1,10 @@
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 python your_code_name.py
 
-w, dl_dw = model:getParameters() --w는 weights, dl_dw는 gradient parameter가 된다.
-
-~ward(input, output)
-model:backward(input,do_dw) -- 이를 수행했을 경우, dl_dw가 자동으로 업데이트 된다. 업데이트 전 dl_dw:zero() 필수
+---------------------------------------
+-- Windows 10 setting
+1. Install anaconda3 (
+https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86_64.exe)
+2. Opencv3 (https://github.com/conda/conda/issues/3652)
 
 -----------------------------------------------------------------
 -- torch debug IDE install
