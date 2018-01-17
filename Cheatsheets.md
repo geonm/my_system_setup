@@ -5,6 +5,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 python your_code_name.py
 1. Install anaconda3 (
 https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86_64.exe)
 2. Opencv3 (https://github.com/conda/conda/issues/3652)
+3. Pycharm (https://www.jetbrains.com/pycharm/download/#section=windows)
 
 -----------------------------------------------------------------
 -- torch debug IDE install
