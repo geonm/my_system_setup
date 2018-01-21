@@ -28,7 +28,9 @@ https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86_64.exe)
 3. add this line
    export LD_LIBRARY_PATH=/usr/local/cuda/lib64/
 4. source ~/.bashrc
-5. Good luck :)
+5. pip install --upgrade pip
+6. pip install tensorflow-gpu
+7. Good luck :)
 
 
 -----------------------------------------------------------------
