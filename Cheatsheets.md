@@ -3,7 +3,8 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 python your_code_name.py
 ------------------------------------------------------------------
 -- Thinkpad with ubuntu 16.04 setting list
 1. To set threshold values for charging battery: https://www.quora.com/My-laptop-battery-is-not-charging-after-60
-2. 
+2. https://www.reddit.com/r/thinkpad/comments/6o0cjg/my_t470s_arrived/
+3. http://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html
 ---------------------------------------
 -- Windows 10 setting
 1. Install anaconda3 (
