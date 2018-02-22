@@ -6,6 +6,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 python your_code_name.py
 2. https://www.reddit.com/r/thinkpad/comments/6o0cjg/my_t470s_arrived/
 3. http://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html
 4. printer. add network device (10.64.91.xxx), then manually set-up Generic-PCL-6-PCL-XL-LF
+5. Shut-down auto-browsing printer: sudo systemctl stop cups-browsed, sudo systemctl disable cups-browsed
 ---------------------------------------
 -- Windows 10 setting
 1. Install anaconda3 (
