@@ -1,3 +1,5 @@
+ref: https://github.com/Tencent/ncnn/wiki/how-to-build
+
 I want to share my experience for ncnn, which was published by tencent.
 
 ----------------------------------
