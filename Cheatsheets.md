@@ -15,6 +15,15 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 python your_code_name.py
 11. $ sudo find / name -name libgomp.so.1
 12. 
 ---------------------------------------
+-- Thinkpad t470s with ubuntu 16.04 setting list
+1. To set threshold values for chargning battery: https://www.reddit.com/r/thinkpad/comments/6o0cjg/my_t470s_arrived/
+1-1. before installing chrome, do $ sudo apt-get install libappindicator1
+1-2. $ sudo dpkg -l chrome***.deb
+2. first, install opencv3.x from source : http://webnautes.tistory.com/1030 and https://www.learnopencv.com/install-opencv3-on-ubuntu/
+3. second, install cmake and protobuf from source : http://radiation.tistory.com/entry/Ubuntu%EC%97%90-cmake-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0, https://github.com/google/protobuf/blob/master/src/README.md
+4, third, $ pip3 install tensorflow, $ pip3 install dlib
+5. follow above setup for printer
+---------------------------------------
 -- Windows 10 setting
 1. Install anaconda3 (
 https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86_64.exe)
