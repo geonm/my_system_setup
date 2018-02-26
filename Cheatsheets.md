@@ -7,6 +7,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 python your_code_name.py
 3. http://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html
 4. printer. add network device (10.64.91.xxx), then manually set-up Generic-PCL-6-PCL-XL-LF
 5. Shut-down auto-browsing printer: sudo systemctl stop cups-browsed, sudo systemctl disable cups-browsed
+6. install cmake, protobuf from source: http://radiation.tistory.com/entry/Ubuntu%EC%97%90-cmake-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0, https://github.com/google/protobuf/blob/master/src/README.md
 ---------------------------------------
 -- Windows 10 setting
 1. Install anaconda3 (
