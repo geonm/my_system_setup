@@ -13,7 +13,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 python your_code_name.py
 9. Install Opencv3.x from source : http://webnautes.tistory.com/1030
 10. then $ pip3 install tensorflow (CPU mode)
 11. $ sudo find / name -name libgomp.so.1
-12. 
+12. Korean setup : http://promobile.tistory.com/363, then https://forum.ubuntu-kr.org/viewtopic.php?t=27322
 ---------------------------------------
 -- Thinkpad t470s with ubuntu 16.04 setting list
 1. To set threshold values for chargning battery: https://www.reddit.com/r/thinkpad/comments/6o0cjg/my_t470s_arrived/
