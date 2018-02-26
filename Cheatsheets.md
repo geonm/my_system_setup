@@ -12,6 +12,8 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 python your_code_name.py
 8. then DO NOT TRUST ANACONDA PACKAGE!!! JUST install everything from source
 9. Install Opencv3.x from source : http://webnautes.tistory.com/1030
 10. then $ pip3 install tensorflow (CPU mode)
+11. $ sudo find / name -name libgomp.so.1
+12. 
 ---------------------------------------
 -- Windows 10 setting
 1. Install anaconda3 (
