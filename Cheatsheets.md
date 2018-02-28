@@ -16,7 +16,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 python your_code_name.py
 12. Korean setup : http://promobile.tistory.com/363, then https://forum.ubuntu-kr.org/viewtopic.php?t=27322
 13. How to ignore closing lid: IgnoreLid=true in /etc/UPower/UPower.conf
 ---------------------------------------
--- Thinkpad t470s with ubuntu 16.04 setting list
+## Thinkpad t470s with ubuntu 16.04 setting list
 1. To set threshold values for chargning battery: https://www.reddit.com/r/thinkpad/comments/6o0cjg/my_t470s_arrived/
 1-1. before installing chrome, do $ sudo apt-get install libappindicator1
 1-2. $ sudo dpkg -l chrome***.deb
@@ -24,6 +24,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 python your_code_name.py
 3. second, install cmake and protobuf from source : http://radiation.tistory.com/entry/Ubuntu%EC%97%90-cmake-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0, https://github.com/google/protobuf/blob/master/src/README.md
 4, third, $ pip3 install tensorflow, $ pip3 install dlib
 5. follow above setup for printer
+6. $ git clone https://github.com/tensorflow/models.git
 ---------------------------------------
 -- Windows 10 setting
 1. Install anaconda3 (
